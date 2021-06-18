@@ -1,3 +1,3 @@
 export function test() {
-  console.log();
+  console.log(213123);
 }
