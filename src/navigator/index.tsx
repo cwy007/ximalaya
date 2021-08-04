@@ -16,6 +16,7 @@ export type RootStackParamList = {
   BottomTabs: {
     screen?: string;
   };
+  // 页面名称&页面接收的参数
   Detail: {
     id: number;
   };
@@ -40,7 +41,7 @@ class Navigator extends React.Component {
             headerStyle: {
               ...Platform.select({
                 android: {
-                  elevation: 0,
+                  elevation: 0, // 仰角
                   borderBottomWidth: StyleSheet.hairlineWidth,
                 },
               }),
