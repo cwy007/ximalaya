@@ -10,8 +10,10 @@ interface IProps extends ModelState {
   navigation: RootStackNavigation;
 }
 
-const mapStateToProps = ({home}: RootState) => ({
+const mapStateToProps = ({home, loading}: RootState) => ({
   num: home.num,
+  // 哪一个异步操作的状态
+  loading: loading.effects['home/asyncAdd'],
 });
 
 const connector = connect(mapStateToProps);
@@ -41,12 +43,13 @@ class Home extends React.Component<IProps> {
   };
 
   render() {
-    const {num} = this.props;
+    const {num, loading} = this.props;
     return (
       <View>
         <Text>Home{num}</Text>
-        <Button title="加+" onPress={this.handleAdd} />
-        <Button title="异步加+" onPress={this.handleAsyncAdd} />
+        <Text>{loading ? '正在努力计算中' : ''}</Text>
+        <Button title="加+10" onPress={this.handleAdd} />
+        <Button title="异步加+2" onPress={this.handleAsyncAdd} />
         <Button title="跳转到详情页" onPress={this.onPress} />
       </View>
     );

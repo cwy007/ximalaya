@@ -22,7 +22,7 @@ const initialState = {
   num: 0,
 };
 
-function delay(timeout) {
+function delay(timeout: number) {
   return new Promise(resolve => {
     setTimeout(resolve, timeout);
   });

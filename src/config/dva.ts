@@ -1,5 +1,6 @@
 import {create} from 'dva-core-ts';
 import models from '../models';
+import createLoading from 'dva-loading-ts';
 
 // 1.创建dva实例
 const app = create();
@@ -8,6 +9,9 @@ const app = create();
 models.forEach(model => {
   app.model(model);
 });
+
+// 插件
+app.use(createLoading());
 
 // 3.启动 dva
 app.start();
