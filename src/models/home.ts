@@ -13,14 +13,20 @@ interface HomeModel extends Model {
     add: Reducer<HomeState>;
   };
   // 异步action
-  // effects: {
-  //   asyncAdd: Effect;
-  // };
+  effects: {
+    asyncAdd: Effect;
+  };
 }
 
 const initialState = {
   num: 0,
 };
+
+function delay(timeout) {
+  return new Promise(resolve => {
+    setTimeout(resolve, timeout);
+  });
+}
 
 const homeModel: HomeModel = {
   namespace: 'home',
@@ -31,6 +37,20 @@ const homeModel: HomeModel = {
         ...state,
         num: state.num + payload.num,
       };
+    },
+  },
+  effects: {
+    // 生成器函数
+    // 参数与reducer中是相反的
+    *asyncAdd({payload}, {call, put}) {
+      // call 执行异步操作
+      yield call(delay, 3000);
+      // 派发action
+      yield put({
+        // 当前model中的action不用加namespace
+        type: 'add',
+        payload,
+      });
     },
   },
 };
