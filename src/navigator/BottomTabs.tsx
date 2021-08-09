@@ -10,6 +10,7 @@ import {
   RouteProp,
   TabNavigationState,
 } from '@react-navigation/native';
+import Icon from '@/assets/iconfont';
 
 // 定义标签导航器中有哪些页面
 export type BottomTabParamList = {
@@ -70,22 +71,42 @@ class BottomTabs extends React.Component<IProps> {
         <Tab.Screen
           name="Home"
           component={Home}
-          options={{tabBarLabel: '首页'}}
+          options={{
+            tabBarLabel: '首页',
+            tabBarIcon: ({color, size}) => (
+              <Icon name="icon-home" color={color} size={size} />
+            ),
+          }}
         />
         <Tab.Screen
           name="Listen"
           component={Listen}
-          options={{tabBarLabel: '我听'}}
+          options={{
+            tabBarLabel: '我听',
+            tabBarIcon: ({color, size}) => (
+              <Icon name="icon-music" color={color} size={size} />
+            ),
+          }}
         />
         <Tab.Screen
           name="Found"
           component={Found}
-          options={{tabBarLabel: '发现'}}
+          options={{
+            tabBarLabel: '发现',
+            tabBarIcon: ({color, size}) => (
+              <Icon name="icon-search" color={color} size={size} />
+            ),
+          }}
         />
         <Tab.Screen
           name="Account"
           component={Account}
-          options={{tabBarLabel: '我的'}}
+          options={{
+            tabBarLabel: '我的',
+            tabBarIcon: ({color, size}) => (
+              <Icon name="icon-my" color={color} size={size} />
+            ),
+          }}
         />
       </Tab.Navigator>
     );
