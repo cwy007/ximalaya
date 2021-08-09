@@ -32,8 +32,6 @@ class HomeTabs extends React.Component {
           component={Home}
           options={{tabBarLabel: '推荐'}}
         />
-        <Tab.Screen name="Home1" component={Home} />
-        <Tab.Screen name="Home2" component={Home} />
       </Tab.Navigator>
     );
   }

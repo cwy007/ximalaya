@@ -38,9 +38,8 @@ class Navigator extends React.Component {
             cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS, // 内容部分的动画
             gestureEnabled: true,
             gestureDirection: 'horizontal',
-            // headerStatusBarHeight: StatusBar.currentHeight,
+            headerStatusBarHeight: StatusBar.currentHeight,
             headerStyle: {
-              backgroundColor: 'red',
               ...Platform.select({
                 android: {
                   elevation: 0, // 仰角
