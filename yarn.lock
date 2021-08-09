@@ -1140,32 +1140,40 @@
     color "^3.1.3"
     react-native-iphone-x-helper "^1.3.0"
 
-"@react-navigation/core@^5.15.3":
-  version "5.15.3"
-  resolved "https://registry.nlark.com/@react-navigation/core/download/@react-navigation/core-5.15.3.tgz#dce7090bf3ea0d302993d742c706825e495b812e"
-  integrity sha1-3OcJC/PqDTApk9dCxwaCXklbgS4=
+"@react-navigation/core@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.nlark.com/@react-navigation/core/download/@react-navigation/core-6.0.1.tgz#4424ee1f83e2e305ef80d27c2778fb82fba852a0"
+  integrity sha1-RCTuH4Pi4wXvgNJ8J3j7gvuoUqA=
   dependencies:
-    "@react-navigation/routers" "^5.7.2"
+    "@react-navigation/routers" "^6.0.1"
     escape-string-regexp "^4.0.0"
-    nanoid "^3.1.15"
-    query-string "^6.13.6"
+    nanoid "^3.1.23"
+    query-string "^7.0.0"
     react-is "^16.13.0"
 
-"@react-navigation/native@^5.9.4":
-  version "5.9.4"
-  resolved "https://registry.nlark.com/@react-navigation/native/download/@react-navigation/native-5.9.4.tgz#414c044423c58aa1cdde1b6494309e0b51da08b8"
-  integrity sha1-QUwERCPFiqHN3htklDCeC1HaCLg=
+"@react-navigation/material-top-tabs@^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.nlark.com/@react-navigation/material-top-tabs/download/@react-navigation/material-top-tabs-6.0.2.tgz#c2036ab53345a634f12f66cf04896c3fc059a423"
+  integrity sha1-wgNqtTNFpjTxL2bPBIlsP8BZpCM=
   dependencies:
-    "@react-navigation/core" "^5.15.3"
-    escape-string-regexp "^4.0.0"
-    nanoid "^3.1.15"
+    color "^3.1.3"
+    warn-once "^0.1.0"
 
-"@react-navigation/routers@^5.7.2":
-  version "5.7.2"
-  resolved "https://registry.nlark.com/@react-navigation/routers/download/@react-navigation/routers-5.7.2.tgz?cache=0&sync_timestamp=1622136080088&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40react-navigation%2Frouters%2Fdownload%2F%40react-navigation%2Frouters-5.7.2.tgz#069d0a707b30ba2e27a32b6482531d0ff7317136"
-  integrity sha1-Bp0KcHswui4noytkglMdD/cxcTY=
+"@react-navigation/native@^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.nlark.com/@react-navigation/native/download/@react-navigation/native-6.0.2.tgz?cache=0&sync_timestamp=1628342259888&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40react-navigation%2Fnative%2Fdownload%2F%40react-navigation%2Fnative-6.0.2.tgz#6bdb3cfafb6a9cfb603c1555dd61faafca35b7c2"
+  integrity sha1-a9s8+vtqnPtgPBVV3WH6r8o1t8I=
   dependencies:
-    nanoid "^3.1.15"
+    "@react-navigation/core" "^6.0.1"
+    escape-string-regexp "^4.0.0"
+    nanoid "^3.1.23"
+
+"@react-navigation/routers@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.nlark.com/@react-navigation/routers/download/@react-navigation/routers-6.0.1.tgz#ae50f07c776c18bd9fdc87f17e9f3afc3fd59d19"
+  integrity sha1-rlDwfHdsGL2f3Ifxfp86/D/VnRk=
+  dependencies:
+    nanoid "^3.1.23"
 
 "@react-navigation/stack@^5.14.5":
   version "5.14.5"
@@ -4930,9 +4938,9 @@ ms@2.1.2:
   resolved "https://registry.npm.taobao.org/ms/download/ms-2.1.2.tgz?cache=0&sync_timestamp=1607433899126&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fms%2Fdownload%2Fms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha1-0J0fNXtEP0kzgqjrPM0YOHKuYAk=
 
-nanoid@^3.1.15:
+nanoid@^3.1.23:
   version "3.1.23"
-  resolved "https://registry.nlark.com/nanoid/download/nanoid-3.1.23.tgz?cache=0&sync_timestamp=1620673983269&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fnanoid%2Fdownload%2Fnanoid-3.1.23.tgz#f744086ce7c2bc47ee0a8472574d5c78e4183a81"
+  resolved "https://registry.nlark.com/nanoid/download/nanoid-3.1.23.tgz#f744086ce7c2bc47ee0a8472574d5c78e4183a81"
   integrity sha1-90QIbOfCvEfuCoRyV01ceOQYOoE=
 
 nanomatch@^1.2.9:
@@ -5495,10 +5503,10 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.nlark.com/punycode/download/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha1-tYsBCsQMIsVldhbI0sLALHv0eew=
 
-query-string@^6.13.6:
-  version "6.14.1"
-  resolved "https://registry.npm.taobao.org/query-string/download/query-string-6.14.1.tgz?cache=0&sync_timestamp=1616068686629&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fquery-string%2Fdownload%2Fquery-string-6.14.1.tgz#7ac2dca46da7f309449ba0f86b1fd28255b0c86a"
-  integrity sha1-esLcpG2n8wlEm6D4ax/SglWwyGo=
+query-string@^7.0.0:
+  version "7.0.1"
+  resolved "https://registry.nlark.com/query-string/download/query-string-7.0.1.tgz?cache=0&sync_timestamp=1624297034221&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fquery-string%2Fdownload%2Fquery-string-7.0.1.tgz#45bd149cf586aaa582dffc7ec7a8ad97dd02f75d"
+  integrity sha1-Rb0UnPWGqqWC3/x+x6itl90C910=
   dependencies:
     decode-uri-component "^0.2.0"
     filter-obj "^1.1.0"
@@ -5571,6 +5579,11 @@ react-native-iphone-x-helper@^1.3.0:
   resolved "https://registry.npm.taobao.org/react-native-iphone-x-helper/download/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
   integrity sha1-IMYD6aDnZf1vlzlmOL3rDlpgsBA=
 
+react-native-pager-view@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.nlark.com/react-native-pager-view/download/react-native-pager-view-5.4.0.tgz#8e30a391a68da26e59f4ae724341b9208924b2ee"
+  integrity sha1-jjCjkaaNom5Z9K5yQ0G5IIkksu4=
+
 react-native-reanimated@^2.2.0:
   version "2.2.0"
   resolved "https://registry.nlark.com/react-native-reanimated/download/react-native-reanimated-2.2.0.tgz#a6412c56b4e591d1f00fac949f62d0c72c357c78"
@@ -5600,6 +5613,11 @@ react-native-svg@^12.1.1:
   dependencies:
     css-select "^2.1.0"
     css-tree "^1.0.0-alpha.39"
+
+react-native-tab-view@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.nlark.com/react-native-tab-view/download/react-native-tab-view-3.1.1.tgz#1f8d7a835ab4f5b1b1407ec8dddc1053b53fa3c6"
+  integrity sha1-H416g1q09bGxQH7I3dwQU7U/o8Y=
 
 react-native@0.64.1:
   version "0.64.1"

@@ -9,7 +9,7 @@ import {
 // import Home from '@/pages/Home';
 import BottomTabs from './BottomTabs';
 import Detail from '@/pages/Detail';
-import {Platform, StyleSheet} from 'react-native';
+import {Platform, StatusBar, StyleSheet} from 'react-native';
 
 export type RootStackParamList = {
   // Home: undefined;
@@ -38,7 +38,9 @@ class Navigator extends React.Component {
             cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS, // 内容部分的动画
             gestureEnabled: true,
             gestureDirection: 'horizontal',
+            // headerStatusBarHeight: StatusBar.currentHeight,
             headerStyle: {
+              backgroundColor: 'red',
               ...Platform.select({
                 android: {
                   elevation: 0, // 仰角
